@@ -1,3 +1,7 @@
-const icons = document.querySelectorAll("-section-1-icons i");
+const icons = document.querySelectorAll(".section-1-icons i");
 
-setInterval(() => {}, 300);
+setInterval(() => {
+  const icon = document.querySelector(".section-1-icons .change");
+  icon.classList.remove("change");
+  icon.nextElementSibling.classList.add("change");
+}, 4000);
